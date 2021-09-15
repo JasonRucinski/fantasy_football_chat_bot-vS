@@ -875,13 +875,13 @@ if __name__ == '__main__':
             day_of_week='tue', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
             timezone=my_timezone, replace_existing=True)
         sched.add_job(bot_main, 'cron', ['get_standings'], id='standings',
-            day_of_week='tue', hour=22, minute=0, start_date=ff_start_date, end_date=ff_end_date,
+            day_of_week='tue', hour=22, minute=5, start_date=ff_start_date, end_date=ff_end_date,
             timezone=my_timezone, replace_existing=True)
         sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
-            day_of_week='tue', hour=22, minute=0, second=5, start_date=ff_start_date, end_date=ff_end_date,
+            day_of_week='tue', hour=22, minute=5, second=5, start_date=ff_start_date, end_date=ff_end_date,
             timezone=my_timezone, replace_existing=True)
         sched.add_job(bot_main, 'cron', ['get_expected_win'], id='get_expected_win',
-            day_of_week='tue', hour=22, minute=0, second=10, start_date=ff_start_date, end_date=ff_end_date,
+            day_of_week='tue', hour=22, minute=5, second=10, start_date=ff_start_date, end_date=ff_end_date,
             timezone=my_timezone, replace_existing=True)
         sched.add_job(bot_main, 'cron', ['get_waiver_report'], id='waiver_report',
             day_of_week='wed', hour=8, start_date=ff_start_date, end_date=ff_end_date,
